@@ -1,5 +1,7 @@
 CREATE DATABASE CompanyDB;
+
 USE CompanyDB;
+
 CREATE TABLE Employee (
     Emp_id INT PRIMARY KEY,
     Emp_name VARCHAR(50),
@@ -20,15 +22,19 @@ Select * from Employee;
 UPDATE Employee
 SET Emp_role = 'IT Support Specialist'
 WHERE Emp_id = 120;
+
 UPDATE Employee
 SET Emp_name = 'Hari'
 WHERE Emp_id = 124;
+
 UPDATE Employee
 SET Emp_salary = 90000.00
 WHERE Emp_id = 124;
+
 UPDATE Employee
 SET Emp_role = 'Software Engineer'
 WHERE Emp_id = 124;
+
 DELETE FROM Employee
 WHERE Emp_id = 123;
 
@@ -64,5 +70,6 @@ DELETE FROM orders
 WHERE order_id = 133;
 
 DELETE FROM orders;
+
 SELECT * FROM orders;
 
