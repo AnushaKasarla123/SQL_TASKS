@@ -1,3 +1,32 @@
+
+use 106r;
+
+CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(50),
+    department VARCHAR(30),
+    salary INT,
+    age INT,
+    city VARCHAR(30),
+    joining_date DATE,
+    manager_id INT
+);
+
+INSERT INTO employees VALUES
+(101, 'Ramesh', 'HR', 35000, 25, 'Hyderabad', '2022-01-15', NULL),
+(102, 'Suresh', 'IT', 60000, 28, 'Bangalore', '2021-03-20', 105),
+(103, 'Priya', 'Finance', 55000, 30, 'Chennai', '2020-07-10', 106),
+(104, 'Anil', 'IT', 75000, 32, 'Hyderabad', '2019-05-18', 105),
+(105, 'Kiran', 'IT', 90000, 35, 'Bangalore', '2018-02-25', NULL),
+(106, 'Meena', 'Finance', 85000, 34, 'Chennai', '2017-11-12', NULL),
+(107, 'Raj', 'HR', 40000, 26, 'Mumbai', '2023-01-05', 101),
+(108, 'Sneha', 'Sales', 50000, 29, 'Hyderabad', '2021-09-15', 109),
+(109, 'Arjun', 'Sales', 70000, 31, 'Mumbai', '2019-08-20', NULL),
+(110, 'Divya', 'Marketing', 45000, 27, 'Pune', '2022-06-11', 111),
+(111, 'Vijay', 'Marketing', 80000, 36, 'Pune', '2016-04-30', NULL),
+(112, 'Kavya', 'IT', 65000, 29, 'Chennai', '2022-10-10', 105);
+
+
 -- 1. Display all records
 SELECT * FROM employees;
 
